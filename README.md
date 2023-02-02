@@ -3,7 +3,7 @@
 ## Introduction
   This repository is just track how I worked for my client. This is one of the basic web scrapping task. 
   
-## Get the Output
+## How To Collect the Output
 
   This one can be collect data by anyone who is a python practioner with following some steps:
   
