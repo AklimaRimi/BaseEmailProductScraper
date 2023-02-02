@@ -36,6 +36,6 @@
 ## Output
   After completing all of process that you've done above you get 2 `csv` files.
   
-  i. One is about collected links in `links.csv`
-  ii. Another is the main scrapped data `info.csv`
+  i. One is about collected links in `links.csv` [links.csv](https://github.com/AklimaRimi/BaseEmailProductScraper/blob/main/output/links.csv) </br>
+  ii. Another is the main scrapped data `info.csv` [info.csv](https://github.com/AklimaRimi/BaseEmailProductScraper/blob/main/output/info.csv)
   
