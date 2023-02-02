@@ -34,18 +34,19 @@ lists = [
     'https://www.base-emails.com/achat/cat-e-mails-par-region-2.html',
 ]
 
-data = []
-driver = webdriver.Chrome()
+if __name__ == '__main__':
+    data = []
+    driver = webdriver.Chrome()
 
-for i in lists:
-    driver.get(i)
+    for i in lists:
+        driver.get(i)
 
-    links = driver.find_elements(By.CLASS_NAME,'image_zoom')
-    for link in links:
-        ln = link.find_element(By.TAG_NAME,'a').get_attribute('href')
-        data.append(ln)
-        
+        links = driver.find_elements(By.CLASS_NAME,'image_zoom')
+        for link in links:
+            ln = link.find_element(By.TAG_NAME,'a').get_attribute('href')
+            data.append(ln)
 
-df = pd.DataFrame(data=data,columns=['Link'])
-df.to_csv('links.csv',index=False)
+
+    df = pd.DataFrame(data=data,columns=['Link'])
+    df.to_csv('links.csv',index=False)
     
